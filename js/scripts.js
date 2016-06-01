@@ -1,4 +1,4 @@
-$(document).ready(function() {
+
   $('#blanks form').submit(function(event){
     var person1Input = $("input#person1").val();
     var person2Input = $("input#person2").val();
@@ -14,8 +14,7 @@ $(document).ready(function() {
     $('.verb').text("verbInput");
     $('.noun').text("nounInput");
 
-    $('#story').show();
+    $('#story').toggle();
 
     event.preventDefault();
   });
-});
